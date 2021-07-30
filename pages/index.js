@@ -1,8 +1,10 @@
 import Head from "next/head";
 import Header from "../component/header/Header";
 import Nav from "../component/nav/Nav";
+import Results from "../component/results/Results";
+import request from "../utils/request";
 
-export default function Home() {
+export default function Home({ results }) {
      return (
           <div>
                <Head>
@@ -16,6 +18,25 @@ export default function Home() {
 
                <Header />
                <Nav />
+
+               <Results results={results} />
           </div>
      );
+}
+
+// ssr page : it'll execute before render
+export async function getServerSideProps(context) {
+     const genre = context.query.genre;
+     // get imdb api
+     const requests = await fetch(
+          `https://api.themoviedb.org/3${
+               request[genre]?.url || request.fetchTrending.url
+          }`
+     ).then((res) => res.json);
+
+     return {
+          props: {
+               results: request.results,
+          },
+     };
 }

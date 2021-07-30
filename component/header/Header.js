@@ -9,6 +9,7 @@ import {
 } from "@heroicons/react/outline";
 import huluLogo from "./../../assets/huluwhite.png";
 import HeaderItem from "./HeaderItem";
+
 // tailwind css
 const tailHeader =
      "flex flex-col sm:flex-row m-5 justify-between items-center h-auto";
