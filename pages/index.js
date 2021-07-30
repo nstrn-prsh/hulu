@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
+import Header from "../component/header/Header";
+import Nav from "../component/nav/Nav";
 
 export default function Home() {
      return (
@@ -12,7 +13,9 @@ export default function Home() {
                     />
                     <link rel='icon' href='/favicon.ico' />
                </Head>
-               <h1>lets build hulu 2.0 </h1>
+
+               <Header />
+               <Nav />
           </div>
      );
 }
