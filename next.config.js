@@ -1,5 +1,18 @@
 module.exports = {
      images: {
-          domains: ["https://links.papareact.com/", "image.tmdb.org"],
+          domains: ["image.tmdb.org"],
      },
+     // async headers() {
+     //      return [
+     //           {
+     //                source: "/(*.)",
+     //                headers: [
+     //                     {
+     //                          key: "Content-Type",
+     //                          value: "text/event-stream",
+     //                     },
+     //                ],
+     //           },
+     //      ];
+     // },
 };

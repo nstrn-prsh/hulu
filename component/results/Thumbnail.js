@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import Image from "next/image";
-import { ThumbIcon } from "@heroicons/react/outline";
 import { forwardRef } from "react";
+import { HeartIcon } from "@heroicons/react/outline";
 
 // tailwind css
 const tailWrapperDiv =
@@ -41,7 +41,7 @@ const Thumbnail = forwardRef(({ result }, ref) => {
                     <p className={tailTextP2}>
                          {result.media_type && `${result.media_type} .`}{" "}
                          {result.release_date || result.first_air_date} .{" "}
-                         <ThumbIcon className={tailThumbIcon} />{" "}
+                         <HeartIcon className={tailThumbIcon} />{" "}
                          {result.vote_count}
                     </p>
                </div>

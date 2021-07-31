@@ -1,5 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
-const API_KEY = process.env.API_KEY;
+// const API_KEY = process.env.API_KEY;
+const API_KEY = '1e5f6d09d9179252f3a900f646b19e14';
+
 
 // accessing the tmdb api
 export default {
