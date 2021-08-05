@@ -12,4 +12,4 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![](https://i.ibb.co/5R7XpJL/hulu.png)
